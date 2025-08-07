@@ -19,5 +19,5 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  base: "/deploy-vite/", 
+  base: "/Portfolio-Website", 
 }));
