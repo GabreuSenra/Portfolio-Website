@@ -18,11 +18,13 @@ export const Hero = () => {
       
       <div className="container mx-auto px-6 text-center relative z-10">
         <div className="max-w-4xl mx-auto animate-fade-in-up">
-          {/* Profile Image Placeholder */}
+          
           <div className="w-32 h-32 mx-auto mb-8 bg-gradient-primary rounded-full p-1 animate-glow-pulse">
-            <div className="w-full h-full bg-background rounded-full flex items-center justify-center text-4xl font-bold text-gradient-primary">
-              GS
-            </div>
+            <img 
+              src="src/images/profile.png" 
+              alt="Gabriel Senra" 
+              className="w-full h-full rounded-full object-cover"
+            />
           </div>
           
           <h1 className="text-6xl md:text-8xl font-bold mb-6">
@@ -63,7 +65,7 @@ export const Hero = () => {
           {/* Social Links */}
           <div className="flex justify-center gap-6 mb-16">
             <a 
-              href="https://github.com" 
+              href="https://github.com/GabreuSenra" 
               target="_blank" 
               rel="noopener noreferrer"
               className="p-3 rounded-full bg-card/50 border border-border/50 hover:border-primary/50 hover:bg-primary/10 transition-all duration-300 hover:scale-110 group"
@@ -71,7 +73,7 @@ export const Hero = () => {
               <Github className="h-6 w-6 text-muted-foreground group-hover:text-primary transition-colors" />
             </a>
             <a 
-              href="https://linkedin.com" 
+              href="https://www.linkedin.com/in/devgabrielsenra/" 
               target="_blank" 
               rel="noopener noreferrer"
               className="p-3 rounded-full bg-card/50 border border-border/50 hover:border-primary/50 hover:bg-primary/10 transition-all duration-300 hover:scale-110 group"

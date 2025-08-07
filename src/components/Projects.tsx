@@ -9,7 +9,7 @@ export const Projects = () => {
   const categories = [
     { id: "todos", label: "Todos os Projetos" },
     { id: "websites", label: "Websites" },
-    { id: "landing", label: "Landing Pages" },
+    //{ id: "landing", label: "Landing Pages" },
     { id: "ecommerce", label: "E-commerce/SaaS" },
     { id: "jogos", label: "Jogos" },
     { id: "portfolios", label: "Portfólios" }
@@ -17,72 +17,60 @@ export const Projects = () => {
 
   const projects = [
     {
-      id: 1,
-      title: "E-commerce Moderno",
-      description: "Plataforma completa de vendas online com carrinho, pagamentos e administração.",
-      category: "ecommerce",
-      technologies: ["React", "Node.js", "MongoDB", "Stripe"],
-      image: "/placeholder-ecommerce.jpg",
-      liveUrl: "#",
-      githubUrl: "#",
-      featured: true
-    },
-    {
-      id: 2,
-      title: "Landing Page Conversão",
-      description: "Página otimizada para conversão com foco em performance e UX.",
-      category: "landing",
-      technologies: ["React", "Tailwind", "Framer Motion"],
-      image: "/placeholder-landing.jpg",
-      liveUrl: "#",
-      githubUrl: "#",
-      featured: true
-    },
-    {
       id: 3,
-      title: "Game Puzzle 2D",
-      description: "Jogo puzzle interativo desenvolvido em Unity com mecânicas inovadoras.",
+      title: "Cozy Littlequarium",
+      description: "Cozy Littlequarium é um simulador de aquário relaxante que fica na parte inferior da sua tela! Cuide, acasale-os, colecione e decore!",
       category: "jogos",
-      technologies: ["Unity", "C#", "2D Graphics"],
-      image: "/placeholder-game.jpg",
-      liveUrl: "#",
+      technologies: ["Unity", "C#", "Photoshop", "Aseprite"],
+      image: "src/images/projects/projeto3.png",
+      liveUrl: "https://store.steampowered.com/app/3420070/Cozy_Littlequarium/",
       githubUrl: "#",
-      playable: true
+      gameUrl: "https://store.steampowered.com/app/3420070/Cozy_Littlequarium/",
+      playable: true,
+      featured: true,
+      codeAccess: false
     },
     {
       id: 4,
-      title: "Website Corporativo",
-      description: "Site institucional responsivo com CMS integrado e otimizações SEO.",
+      title: "Osmar Advocacia",
+      description: "Site de advocacia trabalhista responsivo com Wordpress e otimizações SEO.",
       category: "websites",
-      technologies: ["Vue.js", "Express", "MySQL"],
-      image: "/placeholder-website.jpg",
-      liveUrl: "#",
-      githubUrl: "#"
+      technologies: ["Wordpress", "Javascript"],
+      image: "src/images/projects/projeto4.png",
+      liveUrl: "https://osmartalaricoadvocacia.com.br/",
+      githubUrl: "#",
     },
     {
       id: 5,
-      title: "Portfólio de Arquiteto",
-      description: "Showcase visual para profissionais de arquitetura com galeria interativa.",
+      title: "Este Portfólio!",
+      description: "Showcase interativo de portfólios profissionais. Como este!",
       category: "portfolios",
-      technologies: ["React", "Three.js", "GSAP"],
-      image: "/placeholder-portfolio.jpg",
+      technologies: ["React", "Vite.js", "Typescript"],
+      image: "src/images/projects/projeto5.png",
       liveUrl: "#",
-      githubUrl: "#"
+      githubUrl: "#",
     },
     {
       id: 6,
-      title: "SaaS Analytics",
-      description: "Plataforma de analytics com dashboards personalizáveis e relatórios.",
-      category: "ecommerce",
-      technologies: ["React", "D3.js", "PostgreSQL"],
-      image: "/placeholder-saas.jpg",
-      liveUrl: "#",
-      githubUrl: "#"
+      title: "While(True)",
+      description: "Vencedor do prêmio de melhor arte do 2° DevJam por Crie Seus Jogos. While(true) é um 'infite runner' desenvolvido para a game jam 'DevJam', com o tema 'Loop Infinito'.",
+      category: "jogos",
+      technologies: ["C#", "Unity", "Photoshop"],
+      image: "src/images/projects/whiletrue.png",
+      liveUrl: "https://gabreu-senra.itch.io/whiletrue",
+      githubUrl: "#",
+      gameUrl: "https://gabreu-senra.itch.io/whiletrue",
+      playable: true,
+      featured: true,
     }
   ];
 
-  const filteredProjects = selectedCategory === "todos" 
-    ? projects 
+  const openLink = (url: string) => {
+    window.open(url, '_blank');
+  };
+
+  const filteredProjects = selectedCategory === "todos"
+    ? projects
     : projects.filter(project => project.category === selectedCategory);
 
   return (
@@ -103,11 +91,10 @@ export const Projects = () => {
                 key={category.id}
                 variant={selectedCategory === category.id ? "default" : "outline"}
                 onClick={() => setSelectedCategory(category.id)}
-                className={`transition-all duration-300 ${
-                  selectedCategory === category.id
+                className={`transition-all duration-300 ${selectedCategory === category.id
                     ? "bg-gradient-primary text-primary-foreground shadow-glow"
                     : "border-primary/30 text-primary hover:bg-primary/10"
-                }`}
+                  }`}
               >
                 {category.label}
               </Button>
@@ -120,33 +107,34 @@ export const Projects = () => {
           {filteredProjects.map((project, index) => (
             <div
               key={project.id}
-              className={`glass rounded-2xl overflow-hidden hover-lift group animate-fade-in ${
-                project.featured ? "md:col-span-2 lg:col-span-1" : ""
-              }`}
+              className={`glass rounded-2xl overflow-hidden hover-lift group animate-fade-in ${project.featured ? "md:col-span-2 lg:col-span-1" : ""
+                }`}
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              {/* Project Image */}
+              {/* Imagem do projeto */}
               <div className="relative h-48 bg-gradient-card overflow-hidden">
                 <div className="w-full h-full bg-muted/20 flex items-center justify-center text-muted-foreground">
-                  <span className="text-sm">Preview do Projeto</span>
+                  <img src={project.image}></img>
                 </div>
-                
+
                 {/* Overlay on Hover */}
                 <div className="absolute inset-0 bg-background/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-4">
-                  <Button size="sm" className="bg-gradient-primary">
+                  <Button onClick={() => openLink(project.liveUrl)} size="sm" className="bg-gradient-primary">
                     <ExternalLink className="h-4 w-4 mr-2" />
                     Ver Site
                   </Button>
                   {project.playable ? (
-                    <Button size="sm" variant="outline">
+                    <Button onClick={() => openLink(project.gameUrl)} size="sm" variant="outline">
                       <Play className="h-4 w-4 mr-2" />
                       Jogar
                     </Button>
                   ) : (
-                    <Button size="sm" variant="outline">
-                      <Github className="h-4 w-4 mr-2" />
-                      Código
-                    </Button>
+                    project.codeAccess && (
+                      <Button onClick={() => openLink(project.githubUrl)} size="sm" variant="outline">
+                        <Github className="h-4 w-4 mr-2" />
+                        Código
+                      </Button>
+                    )
                   )}
                 </div>
               </div>
@@ -163,11 +151,11 @@ export const Projects = () => {
                     </Badge>
                   )}
                 </div>
-                
+
                 <p className="text-muted-foreground mb-4 leading-relaxed">
                   {project.description}
                 </p>
-                
+
                 {/* Technologies */}
                 <div className="flex flex-wrap gap-2 mb-4">
                   {project.technologies.map((tech) => (
@@ -182,14 +170,17 @@ export const Projects = () => {
 
                 {/* Action Buttons */}
                 <div className="flex gap-3">
-                  <Button variant="outline" size="sm" className="flex-1">
+                  <Button onClick={() => openLink(project.liveUrl)} variant="outline" size="sm" className="flex-1">
                     <ExternalLink className="h-4 w-4 mr-2" />
                     Ver Projeto
                   </Button>
-                  <Button variant="outline" size="sm">
-                    <Github className="h-4 w-4" />
-                  </Button>
+                  {project.codeAccess && (
+                    <Button onClick={() => openLink(project.githubUrl)} variant="outline" size="sm">
+                      <Github className="h-4 w-4" />
+                    </Button>
+                  )}
                 </div>
+                  
               </div>
             </div>
           ))}
@@ -200,8 +191,8 @@ export const Projects = () => {
           <p className="text-lg text-muted-foreground mb-8">
             Gostou do que viu? Vamos conversar sobre seu próximo projeto!
           </p>
-          <Button 
-            size="lg" 
+          <Button
+            size="lg"
             className="bg-gradient-secondary text-secondary-foreground hover:scale-105 transition-all duration-300 glow-secondary"
             onClick={() => document.getElementById('contato')?.scrollIntoView({ behavior: 'smooth' })}
           >

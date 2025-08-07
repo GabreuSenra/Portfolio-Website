@@ -2,10 +2,10 @@ import { Code, Gamepad2, Globe, Smartphone } from "lucide-react";
 
 export const About = () => {
   const technologies = [
-    { category: "Front-end", skills: ["HTML", "CSS", "JavaScript", "React", "Vue.js"], icon: Globe },
-    { category: "Back-end", skills: ["Node.js", "Express", "MongoDB", "SQL"], icon: Code },
+    { category: "Front-end", skills: ["HTML", "CSS", "JavaScript", "React", "Vue.js", "Next.js", "Vite.js"], icon: Globe },
+    { category: "Back-end", skills: ["Node.js", "Express", "MongoDB", "SQL", "MySQL"], icon: Code },
+    { category: "Design", skills: ["UX/UI", "Design Responsivo"], icon: Smartphone },
     { category: "Game Dev", skills: ["Unity", "C#"], icon: Gamepad2 },
-    { category: "Design", skills: ["UX/UI", "Design Responsivo"], icon: Smartphone }
   ];
 
   const services = [

@@ -38,14 +38,14 @@ export const Contact = () => {
     {
       icon: Mail,
       label: "Email",
-      value: "gabriel@senra.dev",
-      href: "mailto:gabriel@senra.dev"
+      value: "senra.gabreusoares@gmail.com",
+      href: "mailto:senra.gabreusoares@gmail.com"
     },
     {
       icon: Phone,
-      label: "Telefone",
-      value: "+55 (32) 9 9999-9999",
-      href: "tel:+5532999999999"
+      label: "WhatsApp",
+      value: "+55 (32) 9 9130-9741",
+      href: "https://wa.me/+5532991309741?text=Ei! Vamos conversar sobre um novo projeto?"
     },
     {
       icon: MapPin,
@@ -59,13 +59,13 @@ export const Contact = () => {
     {
       icon: Github,
       label: "GitHub",
-      href: "https://github.com",
+      href: "https://github.com/GabreuSenra",
       color: "hover:text-primary"
     },
     {
       icon: Linkedin,
       label: "LinkedIn", 
-      href: "https://linkedin.com",
+      href: "https://www.linkedin.com/in/devgabrielsenra/",
       color: "hover:text-primary"
     }
   ];
@@ -93,7 +93,7 @@ export const Contact = () => {
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
                 <label htmlFor="name" className="block text-sm font-medium mb-2">
-                  Nome *
+                  Título *
                 </label>
                 <Input
                   id="name"
@@ -173,6 +173,7 @@ export const Contact = () => {
                     <a
                       key={info.label}
                       href={info.href}
+                      target="_blank"
                       className="flex items-center gap-4 p-4 rounded-xl bg-background/30 hover:bg-background/50 transition-all duration-300 hover:scale-[1.02] group"
                     >
                       <div className="w-12 h-12 bg-gradient-primary rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform">

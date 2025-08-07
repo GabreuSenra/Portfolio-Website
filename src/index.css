@@ -2,13 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Gabriel Senra Portfolio Design System - Modern Tech Aesthetic */
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
 
 @layer base {
   :root {
-    /* Core Colors - Tech Blue & Innovation Green */
     --background: 220 15% 4%;
     --background-secondary: 220 15% 6%;
     --foreground: 220 15% 98%;
@@ -42,7 +40,6 @@
     --input: 220 15% 12%;
     --ring: 210 100% 60%;
 
-    /* Design System Extensions */
     --radius: 0.75rem;
     
     /* Gradients */
@@ -79,7 +76,6 @@
   }
 
   .light {
-    /* Light mode variant for accessibility - keeping dark as default for portfolio */
     --background: 220 15% 98%;
     --background-secondary: 220 15% 95%;
     --foreground: 220 15% 8%;

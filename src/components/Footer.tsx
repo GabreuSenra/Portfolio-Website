@@ -11,9 +11,9 @@ export const Footer = () => {
   ];
 
   const socialLinks = [
-    { icon: Github, href: "https://github.com", label: "GitHub" },
-    { icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn" },
-    { icon: Mail, href: "mailto:gabriel@senra.dev", label: "Email" }
+    { icon: Github, href: "https://github.com/GabreuSenra", label: "GitHub" },
+    { icon: Linkedin, href: "https://www.linkedin.com/in/devgabrielsenra/", label: "LinkedIn" },
+    { icon: Mail, href: "mailto:senra.gabreusoares@gmail.com", label: "Email" }
   ];
 
   const scrollToTop = () => {
@@ -77,9 +77,9 @@ export const Footer = () => {
               Contato
             </h4>
             <div className="space-y-3">
-              <p className="text-muted-foreground">gabriel@senra.dev</p>
+              <p className="text-muted-foreground">senra.gabreusoares@gmail.com</p>
               <p className="text-muted-foreground">Juiz de Fora, MG</p>
-              <p className="text-muted-foreground">+55 (32) 9 9999-9999</p>
+              <p className="text-muted-foreground">+55 (32) 9 9130-9741</p>
             </div>
           </div>
         </div>
