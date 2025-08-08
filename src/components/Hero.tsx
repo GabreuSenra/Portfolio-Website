@@ -21,7 +21,7 @@ export const Hero = () => {
           
           <div className="w-32 h-32 mx-auto mb-8 bg-gradient-primary rounded-full p-1 animate-glow-pulse">
             <img 
-              src="src/images/profile.png" 
+              src={`${import.meta.env.BASE_URL}/public/images/profile.png`}
               alt="Gabriel Senra" 
               className="w-full h-full rounded-full object-cover"
             />
