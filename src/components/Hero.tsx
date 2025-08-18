@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Github, Linkedin, Mail, ArrowDown } from "lucide-react";
+import { FaWhatsapp } from 'react-icons/fa';
 
 export const Hero = () => {
   const scrollToSection = (sectionId: string) => {
@@ -79,6 +80,14 @@ export const Hero = () => {
               className="p-3 rounded-full bg-card/50 border border-border/50 hover:border-primary/50 hover:bg-primary/10 transition-all duration-300 hover:scale-110 group"
             >
               <Linkedin className="h-6 w-6 text-muted-foreground group-hover:text-primary transition-colors" />
+            </a>
+            <a 
+              href="https://wa.me/+5532991309741?text=Ei! Vamos conversar sobre um novo projeto?" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="p-3 rounded-full bg-card/50 border border-border/50 hover:border-primary/50 hover:bg-primary/10 transition-all duration-300 hover:scale-110 group"
+            >
+              <FaWhatsapp className="h-6 w-6 text-muted-foreground group-hover:text-secondary transition-colors" />
             </a>
           </div>
           

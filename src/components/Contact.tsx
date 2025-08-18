@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Mail, Phone, MapPin, Send, Github, Linkedin } from "lucide-react";
+import { FaWhatsapp } from 'react-icons/fa';
 import { useToast } from "@/hooks/use-toast";
 
 export const Contact = () => {
@@ -42,7 +43,7 @@ export const Contact = () => {
       href: "mailto:senra.gabreusoares@gmail.com"
     },
     {
-      icon: Phone,
+      icon: FaWhatsapp,
       label: "WhatsApp",
       value: "+55 (32) 9 9130-9741",
       href: "https://wa.me/+5532991309741?text=Ei! Vamos conversar sobre um novo projeto?"
@@ -66,6 +67,12 @@ export const Contact = () => {
       icon: Linkedin,
       label: "LinkedIn", 
       href: "https://www.linkedin.com/in/devgabrielsenra/",
+      color: "hover:text-primary"
+    },
+    {
+      icon: FaWhatsapp,
+      label: "Whatsapp", 
+      href: "https://wa.me/+5532991309741?text=Ei! Vamos conversar sobre um novo projeto?",
       color: "hover:text-primary"
     }
   ];

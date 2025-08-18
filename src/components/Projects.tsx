@@ -17,7 +17,7 @@ export const Projects = () => {
 
   const projects = [
     {
-      id: 3,
+      id: 1,
       title: "Cozy Littlequarium",
       description: "Cozy Littlequarium é um simulador de aquário relaxante que fica na parte inferior da sua tela! Cuide, acasale-os, colecione e decore!",
       category: "jogos",
@@ -42,7 +42,7 @@ export const Projects = () => {
       codeAccess: true
     },
     {
-      id: 4,
+      id: 3,
       title: "Osmar Advocacia",
       description: "Site de advocacia trabalhista responsivo com Wordpress e otimizações SEO.",
       category: "websites",
@@ -52,7 +52,7 @@ export const Projects = () => {
       githubUrl: "#",
     },
     {
-      id: 5,
+      id: 4,
       title: "Este Portfólio!",
       description: "Showcase interativo de portfólios profissionais. Como este!",
       category: "portfolios",
@@ -62,7 +62,7 @@ export const Projects = () => {
       githubUrl: "#",
     },
     {
-      id: 6,
+      id: 5,
       title: "While(True)",
       description: "Vencedor do prêmio de melhor arte do 2° DevJam por Crie Seus Jogos. While(true) é um 'infite runner' desenvolvido para a game jam 'DevJam', com o tema 'Loop Infinito'.",
       category: "jogos",
@@ -73,7 +73,18 @@ export const Projects = () => {
       gameUrl: "https://gabreu-senra.itch.io/whiletrue",
       playable: true,
       featured: true,
-    }
+    },
+    {
+      id: 6,
+      title: "Portfólio Lucas Frizero",
+      description: "Portfólio profissional desenvolvido para o designer Lucas Frizero.",
+      category: "portfolios",
+      technologies: ["React", "Vite.js", "Typescript"],
+      image: `${import.meta.env.BASE_URL}/assets/images/projects/projetoLucasFrizero.png`,
+      liveUrl: "https://gabreusenra.github.io/lucasfrizero.designer/",
+      githubUrl: "https://github.com/GabreuSenra/GraphicsDesignPortfolioTemplate",
+      codeAccess: true
+    },
   ];
 
   const openLink = (url: string) => {
