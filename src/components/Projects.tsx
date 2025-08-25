@@ -85,6 +85,17 @@ export const Projects = () => {
       githubUrl: "https://github.com/GabreuSenra/GraphicsDesignPortfolioTemplate",
       codeAccess: true
     },
+    {
+      id: 7,
+      title: "Showcase de Mudança de Temas",
+      description: "Uma página minimalista feita apenas para show-off de mudanças de tema.",
+      category: "landing",
+      technologies: ["React", "Vite.js", "Typescript"],
+      image: `${import.meta.env.BASE_URL}/assets/images/projects/themeSwitcher.png`,
+      liveUrl: "https://gabreusenra.github.io/ThemeSwitcher/",
+      githubUrl: "https://github.com/GabreuSenra/ThemeSwitcher",
+      codeAccess: true
+    },
   ];
 
   const openLink = (url: string) => {
