@@ -96,6 +96,26 @@ export const Projects = () => {
       githubUrl: "https://github.com/GabreuSenra/ThemeSwitcher",
       codeAccess: true
     },
+    {
+      id: 8,
+      title: "Smile Flow",
+      description: "Um SaaS otimizado para clínicas odontológicas gerenciarem seus pacientes, agendamentos e finanças.",
+      category: "ecommerce",
+      technologies: ["React", "Vite.js", "Typescript"],
+      image: `${import.meta.env.BASE_URL}/assets/images/projects/Smile Flow.png`,
+      liveUrl: "https://smile-flow.vercel.app/",
+      codeAccess: false
+    },
+    {
+      id: 9,
+      title: "Comunidade do Digital",
+      description: "Um SaaS que oferece cursos, ideias, podcasts e mentorias e uma comunidade exclusiva para profissionais de marketing digital.",
+      category: "ecommerce",
+      technologies: ["Wordpress", "Elementor", "JetEngine"],
+      image: `${import.meta.env.BASE_URL}/assets/images/projects/ComunidadeDoDigital.png`,
+      liveUrl: "https://comunidadedodigital.com.br/",
+      codeAccess: false
+    },
   ];
 
   const openLink = (url: string) => {
