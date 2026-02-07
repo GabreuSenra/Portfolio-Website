@@ -39,8 +39,7 @@ export const Hero = () => {
           
           <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-12 leading-relaxed">
             Sou apaixonado por tecnologia e inovação, trabalhando para criar soluções que conectam pessoas 
-            e transformam ideias em realidade. Com experiência em diversas áreas de desenvolvimento, 
-            adoro explorar novos desafios e aplicar meu conhecimento em projetos criativos e funcionais.
+            e transformam ideias em realidade. Adoro explorar novos desafios e aplicar meu conhecimento em projetos criativos e funcionais.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">

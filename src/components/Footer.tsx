@@ -106,9 +106,7 @@ export const Footer = () => {
 
           {/* Copyright */}
           <div className="flex items-center gap-2 text-muted-foreground text-sm">
-            <span>© {currentYear} Gabriel Senra. Feito com</span>
-            <Heart className="h-4 w-4 text-red-500 animate-pulse" />
-            <span>e muito código.</span>
+            <span>© {currentYear} Gabriel Senra.</span>
           </div>
         </div>
 

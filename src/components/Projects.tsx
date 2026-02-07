@@ -64,7 +64,7 @@ export const Projects = () => {
     {
       id: 5,
       title: "While(True)",
-      description: "Vencedor do prêmio de melhor arte do 2° DevJam por Crie Seus Jogos. While(true) é um 'infite runner' desenvolvido para a game jam 'DevJam', com o tema 'Loop Infinito'.",
+      description: "Vencedor do prêmio de melhor arte do 2° DevJam por Crie Seus Jogos. While(true) é um 'infite runner' desenvolvido para a game jam 'DevJam'.",
       category: "jogos",
       technologies: ["C#", "Unity", "Photoshop"],
       image: `${import.meta.env.BASE_URL}/assets/images/projects/whiletrue.png`,
@@ -115,6 +115,19 @@ export const Projects = () => {
       image: `${import.meta.env.BASE_URL}/assets/images/projects/ComunidadeDoDigital.png`,
       liveUrl: "https://comunidadedodigital.com.br/",
       codeAccess: false
+    },
+    {
+      id: 10,
+      title: "Slime Slammer",
+      description: "Slime Slammer é um jogo 'Idle Tower Defence' no estilo Plants vs. Zombies que fica na parte inferior da sua tela!.",
+      category: "jogos",
+      technologies: ["C#", "Unity", "Photoshop"],
+      image: `${import.meta.env.BASE_URL}/assets/images/projects/slimeslammer.png`,
+      liveUrl: "https://gabreu-senra.itch.io/slime-slammer",
+      githubUrl: "#",
+      gameUrl: "https://gabreu-senra.itch.io/slime-slammer",
+      playable: true,
+      featured: true,
     },
   ];
 
