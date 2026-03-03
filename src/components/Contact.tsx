@@ -65,13 +65,13 @@ export const Contact = () => {
     },
     {
       icon: Linkedin,
-      label: "LinkedIn", 
+      label: "LinkedIn",
       href: "https://www.linkedin.com/in/devgabrielsenra/",
       color: "hover:text-primary"
     },
     {
       icon: FaWhatsapp,
-      label: "Whatsapp", 
+      label: "Whatsapp",
       href: "https://wa.me/+5532991309741?text=Ei! Vamos conversar sobre um novo projeto?",
       color: "hover:text-primary"
     }
@@ -85,13 +85,13 @@ export const Contact = () => {
             Vamos <span className="text-gradient-primary">Conversar</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Tem um projeto em mente? Está buscando um desenvolvedor para sua equipe? 
+            Tem um projeto em mente? Está buscando um desenvolvedor para sua equipe?
             Entre em contato e vamos transformar suas ideias em realidade!
           </p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
-          
+
 
           {/* Contact Info */}
           <div className="space-y-8 animate-fade-in" style={{ animationDelay: '0.2s' }}>
@@ -99,7 +99,7 @@ export const Contact = () => {
               <h3 className="text-2xl font-semibold mb-6 text-gradient-secondary">
                 Informações de Contato
               </h3>
-              
+
               <div className="space-y-6">
                 {contactInfo.map((info) => {
                   const IconComponent = info.icon;
@@ -125,28 +125,31 @@ export const Contact = () => {
               </div>
             </div>
 
-            {/* Social Links */}
-            <div className="glass rounded-2xl p-8">
-              <h4 className="text-xl font-semibold mb-6">Conecte-se Comigo</h4>
-              <div className="flex gap-4">
-                {socialLinks.map((social) => {
-                  const IconComponent = social.icon;
-                  return (
-                    <a
-                      key={social.label}
-                      href={social.href}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="p-4 rounded-xl bg-background/30 hover:bg-primary/10 transition-all duration-300 hover:scale-110 group"
-                      aria-label={social.label}
-                    >
-                      <IconComponent className={`h-6 w-6 text-muted-foreground ${social.color} transition-colors`} />
-                    </a>
-                  );
-                })}
-              </div>
-            </div>
 
+
+
+          </div>
+
+          {/* Social Links */}
+          <div className="glass rounded-2xl p-8">
+            <h4 className="text-xl font-semibold mb-6">Conecte-se Comigo</h4>
+            <div className="flex gap-4">
+              {socialLinks.map((social) => {
+                const IconComponent = social.icon;
+                return (
+                  <a
+                    key={social.label}
+                    href={social.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="p-4 rounded-xl bg-background/30 hover:bg-primary/10 transition-all duration-300 hover:scale-110 group"
+                    aria-label={social.label}
+                  >
+                    <IconComponent className={`h-6 w-6 text-muted-foreground ${social.color} transition-colors`} />
+                  </a>
+                );
+              })}
+            </div>
             {/* Call to Action */}
             <div className="glass rounded-2xl p-8 text-center">
               <h4 className="text-xl font-semibold mb-4 text-gradient-primary">
@@ -164,6 +167,7 @@ export const Contact = () => {
               </Button>
             </div>
           </div>
+
         </div>
       </div>
     </section>
