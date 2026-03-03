@@ -36,7 +36,7 @@ const GameDevPage: React.FC = () => {
             <section className="min-h-screen flex flex-col justify-center items-center text-center px-6 relative overflow-hidden">
                 <div className="w-32 h-32 mx-auto mb-8 bg-gradient-primary rounded-full p-1 animate-glow-pulse">
                     <img
-                        src={`${import.meta.env.BASE_URL}/assets/images/profile.png`}
+                        src="/assets/images/profile.png"
                         alt="Gabriel Senra"
                         className="w-full h-full rounded-full object-cover"
                     />
