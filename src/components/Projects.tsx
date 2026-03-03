@@ -129,6 +129,19 @@ export const Projects = () => {
       playable: true,
       featured: true,
     },
+    {
+      id: 11,
+      title: "Super Mario Bros. Wonder Style",
+      description: "Fan-made remake of Super Mario Bros (1985), recreated with the vibrant visual style of Super Mario Bros. Wonder (2023)",
+      category: "jogos",
+      technologies: ["C#", "Unity", "Photoshop"],
+      image: `${import.meta.env.BASE_URL}/assets/images/projects/mariowonder.png`,
+      liveUrl: "https://gabreu-senra.itch.io/super-mario-bros-wonder-style",
+      githubUrl: "#",
+      gameUrl: "https://gabreu-senra.itch.io/super-mario-bros-wonder-style",
+      playable: true,
+      featured: true,
+    },
   ];
 
   const openLink = (url: string) => {

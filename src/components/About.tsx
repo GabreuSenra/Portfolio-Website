@@ -5,7 +5,7 @@ export const About = () => {
     { category: "Front-end", skills: ["HTML", "CSS", "React", "Vue.js", "Next.js", "Vite.js"], icon: Globe },
     { category: "Back-end", skills: ["JavaScript", "Node.js", "Express", "PostgreSQL", "SQL", "MySQL", "C", "C++", "Java"], icon: Code },
     { category: "Design", skills: ["UX/UI", "Design Responsivo", "Design de Interação (HCI)", "Figma", "Photoshop"], icon: Smartphone },
-    { category: "Game Dev", skills: ["Unity", "C#", "Lua", "Python"], icon: Gamepad2 },
+    { category: "Game Dev", skills: ["Unity", "C#", "VFX", "Shaders", "Animations", "Lua", "Python"], icon: Gamepad2 },
   ];
 
   const services = [
