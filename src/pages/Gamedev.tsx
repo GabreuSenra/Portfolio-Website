@@ -1,7 +1,7 @@
 import React from "react";
 import { GamesProjects } from "@/components/GamesProjects";
 import { Github, Linkedin, Mail, ArrowDown } from "lucide-react";
-import { SiArtstation, SiItchdotio  } from 'react-icons/si';
+import { SiArtstation, SiItchdotio } from 'react-icons/si';
 import { FaWhatsapp } from 'react-icons/fa';
 import { ContactGames } from "@/components/ContactGames";
 
@@ -103,11 +103,8 @@ const GameDevPage: React.FC = () => {
                     commercial titles.
                     <br />
                     <br />
-                    My background in Computer Science allows me to design scalable,
-                    maintainable architectures while crafting engaging gameplay
-                    experiences. I have worked as a Game Developer & Project Lead,
-                    balancing technical implementation, game design, and production
-                    planning.
+                    I have a background in Computer Science and focus on building clean, scalable systems for games. As a Game Developer and Project Lead, 
+                    I’ve been involved in everything from coding core systems to shaping gameplay and organizing production.
                     <br />
                     <br />
                     I have also taught Game Development at university level and in public
