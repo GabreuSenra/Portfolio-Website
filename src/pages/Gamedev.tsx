@@ -184,7 +184,7 @@ const GameDevPage: React.FC = () => {
             <section className="py-20 px-6 max-w-5xl mx-auto">
                 <h2 className="text-3xl font-bold mb-8">Education</h2>
                 <ul className="space-y-4 text-gray-300 text-lg">
-                    <li>• Bachelor's Degree in Game Development – Harvard University</li>
+                    <li>• CS50's Game Development – Harvard University</li>
                     <li>
                         • Bachelor's Degree in Computer Science – Federal University of
                         Juiz de Fora (Brazil)
