@@ -2,7 +2,7 @@ import React from "react";
 import { GamesProjects } from "@/components/GamesProjects";
 import { Github, Linkedin, Mail, ArrowDown } from "lucide-react";
 import { SiArtstation, SiItchdotio } from 'react-icons/si';
-import { FaWhatsapp } from 'react-icons/fa';
+import { FaWhatsapp, FaFilePdf } from 'react-icons/fa';
 import { ContactGames } from "@/components/ContactGames";
 
 const skills = {
@@ -79,6 +79,17 @@ const GameDevPage: React.FC = () => {
                         </span>
                     </a>
                     <a
+                        href="/Gabriel Senra Resume.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex flex-row items-center gap-2 p-3 rounded-full bg-card/50 border border-border/50 hover:border-primary/50 hover:bg-primary/10 transition-all duration-300 hover:scale-110 group"
+                    >
+                        <FaFilePdf className="h-6 w-6 text-muted-foreground group-hover:text-primary transition-colors shrink-0" />
+                        <span className="text-sm font-medium text-muted-foreground group-hover:text-primary transition-colors whitespace-nowrap">
+                            Resume
+                        </span>
+                    </a>
+                    <a
                         href="mailto:senra.gabreusoares@gmail.com"
                         target="_blank"
                         rel="noopener noreferrer"
@@ -103,7 +114,7 @@ const GameDevPage: React.FC = () => {
                     commercial titles.
                     <br />
                     <br />
-                    I have a background in Computer Science and focus on building clean, scalable systems for games. As a Game Developer and Project Lead, 
+                    I have a background in Computer Science and focus on building clean, scalable systems for games. As a Game Developer and Project Lead,
                     I’ve been involved in everything from coding core systems to shaping gameplay and organizing production.
                     <br />
                     <br />

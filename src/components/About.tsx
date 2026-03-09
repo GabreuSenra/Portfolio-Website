@@ -113,6 +113,17 @@ export const About = () => {
               Universidade Federal de Juiz de Fora
             </p>
           </div>
+          <div className="glass rounded-2xl p-8 max-w-2xl mx-auto">
+            <h3 className="text-2xl font-semibold mb-4 text-gradient-secondary">
+              Formação Acadêmica
+            </h3>
+            <p className="text-lg text-muted-foreground">
+              <strong className="text-foreground">Ciência da Computação</strong> pela <strong className="text-primary">UFJF</strong>
+            </p>
+            <p className="text-muted-foreground mt-2">
+              Universidade Federal de Juiz de Fora
+            </p>
+          </div>
         </div>
       </div>
     </section>
