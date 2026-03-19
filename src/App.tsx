@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import GameDevPage from "./pages/Gamedev";
+import Game from "./pages/Game";
 import { Analytics } from "@vercel/analytics/react"
 
 const queryClient = new QueryClient();
@@ -20,6 +21,7 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="*" element={<NotFound />} />
           <Route path="/games" element={<GameDevPage />} />
+          <Route path="/test" element={<Game />} />
         </Routes>
         <Analytics/>
       </BrowserRouter>

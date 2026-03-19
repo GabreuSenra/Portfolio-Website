@@ -20,7 +20,7 @@ export const About = () => {
       gradient: "bg-gradient-secondary"
     },
     {
-      title: "E-commerces e Plataformas SaaS", 
+      title: "E-commerces e Plataformas SaaS",
       description: "Soluções completas para vendas online e aplicações web robustas.",
       gradient: "bg-gradient-primary"
     },
@@ -53,7 +53,7 @@ export const About = () => {
           {technologies.map((tech, index) => {
             const IconComponent = tech.icon;
             return (
-              <div 
+              <div
                 key={tech.category}
                 className="glass rounded-2xl p-6 hover-lift group animate-fade-in"
                 style={{ animationDelay: `${index * 0.1}s` }}
@@ -67,7 +67,7 @@ export const About = () => {
                   </h3>
                   <div className="flex flex-wrap gap-2 justify-center">
                     {tech.skills.map((skill) => (
-                      <span 
+                      <span
                         key={skill}
                         className="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium border border-primary/20"
                       >
@@ -84,7 +84,7 @@ export const About = () => {
         {/* Services Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
-            <div 
+            <div
               key={service.title}
               className="glass rounded-2xl p-8 hover-lift interactive-card group animate-fade-in-up"
               style={{ animationDelay: `${index * 0.1}s` }}
@@ -107,21 +107,22 @@ export const About = () => {
               Formação Acadêmica
             </h3>
             <p className="text-lg text-muted-foreground">
-              <strong className="text-foreground">Ciência da Computação</strong> pela <strong className="text-primary">UFJF</strong>
+              <strong className="text-foreground">CS50 Game Development</strong>
             </p>
-            <p className="text-muted-foreground mt-2">
-              Universidade Federal de Juiz de Fora
+            <p className="text-muted-foreground mt-2 mb-5">
+              Harvard University
             </p>
-          </div>
-          <div className="glass rounded-2xl p-8 max-w-2xl mx-auto">
-            <h3 className="text-2xl font-semibold mb-4 text-gradient-secondary">
-              Formação Acadêmica
-            </h3>
             <p className="text-lg text-muted-foreground">
-              <strong className="text-foreground">Ciência da Computação</strong> pela <strong className="text-primary">UFJF</strong>
+              <strong className="text-foreground">Bacharel em Ciência da Computação</strong>
             </p>
-            <p className="text-muted-foreground mt-2">
+            <p className="text-muted-foreground mt-2 mb-5">
               Universidade Federal de Juiz de Fora
+            </p>
+            <p className="text-lg text-muted-foreground">
+              <strong className="text-foreground">Specialization in VFX (in progress)</strong>
+            </p>
+            <p className="text-muted-foreground mt-2 mb-5">
+              VFX Apprentice
             </p>
           </div>
         </div>

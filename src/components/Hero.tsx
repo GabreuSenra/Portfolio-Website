@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Github, Linkedin, Mail, ArrowDown } from "lucide-react";
+import { Github, Linkedin, Mail, ArrowDown, Gamepad } from "lucide-react";
 import {SiArtstation} from 'react-icons/si';
 import { FaWhatsapp } from 'react-icons/fa';
 
@@ -51,6 +51,15 @@ export const Hero = () => {
             >
               <Mail className="mr-2 h-5 w-5" />
               Entre em Contato
+            </Button>
+
+            <Button
+              size="lg"
+              className="bg-gradient-secondary hover:scale-105 transition-all duration-300 glow-primary text-primary-foreground font-semibold px-8 py-3"
+              onClick={() => scrollToSection('contato')}
+            >
+              <Gamepad className="mr-2" />
+              Games Portfolio
             </Button>
 
             <Button

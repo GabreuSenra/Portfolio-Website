@@ -161,7 +161,9 @@ export const Contact = () => {
               <Button
                 size="lg"
                 className="bg-gradient-secondary text-secondary-foreground hover:scale-105 transition-all duration-300 glow-secondary"
-                onClick={() => document.getElementById('name')?.focus()}
+                onClick={() => {
+                  window.location.href = "mailto:senra.gabreusoares@gmail.com?subject=Contact";
+                }}
               >
                 Começar Conversa
               </Button>
