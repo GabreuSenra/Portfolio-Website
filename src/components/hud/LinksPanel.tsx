@@ -22,6 +22,13 @@ const links = [
     color: '#13AFF0',
   },
   {
+    label: "Bachelor's Thesis",
+    description: 'PDF (Portuguese Only)',
+    url: 'http://monografias.ice.ufjf.br/tcc-web/tcc?id=1064',
+    icon: FileText,
+    color: '#d0d334',
+  },
+  {
     label: 'Resume',
     description: 'Download PDF',
     url: '/Gabriel Senra Resume.pdf',

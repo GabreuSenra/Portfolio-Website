@@ -93,6 +93,17 @@ const GameDevPage: React.FC = () => {
                         </span>
                     </a>
                     <a
+                        href="/Gabriel Senra Resume.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex flex-row items-center gap-2 p-3 rounded-full bg-card/50 border border-border/50 hover:border-primary/50 hover:bg-primary/10 transition-all duration-300 hover:scale-110 group"
+                    >
+                        <FaFilePdf className="h-6 w-6 text-muted-foreground group-hover:text-primary transition-colors shrink-0" />
+                        <span className="text-sm font-medium text-muted-foreground group-hover:text-primary transition-colors whitespace-nowrap">
+                            Bachelor's Thesis
+                        </span>
+                    </a>
+                    <a
                         href="mailto:senra.gabreusoares@gmail.com"
                         target="_blank"
                         rel="noopener noreferrer"

@@ -73,6 +73,14 @@ export const Hero = () => {
             >
               Ver Projetos
             </Button>
+            <Button
+              variant="outline"
+              size="lg"
+              className="border-primary/50 text-primary hover:bg-primary/10 hover:scale-105 transition-all duration-300 px-8 py-3"
+              onClick={() => window.open("http://monografias.ice.ufjf.br/tcc-web/tcc?id=1064", "_blank")}
+            >
+              TCC
+            </Button>
           </div>
 
           {/* Social Links */}
