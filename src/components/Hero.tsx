@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Github, Linkedin, Mail, ArrowDown, Gamepad } from "lucide-react";
 import {SiArtstation} from 'react-icons/si';
 import { FaWhatsapp } from 'react-icons/fa';
+import { Navigate, useNavigate } from "react-router-dom";
 
 export const Hero = () => {
   const scrollToSection = (sectionId: string) => {
@@ -10,6 +11,8 @@ export const Hero = () => {
       block: 'start'
     });
   };
+
+  const navigate = useNavigate();
 
   return (
     <section className="min-h-screen flex items-center justify-center relative overflow-hidden">
@@ -56,7 +59,7 @@ export const Hero = () => {
             <Button
               size="lg"
               className="bg-gradient-secondary hover:scale-105 transition-all duration-300 glow-primary text-primary-foreground font-semibold px-8 py-3"
-              onClick={() => scrollToSection('contato')}
+              onClick={() => navigate('/games')}
             >
               <Gamepad className="mr-2" />
               Games Portfolio
