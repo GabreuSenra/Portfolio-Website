@@ -11,9 +11,9 @@ interface IslandProps {
 }
 
 const GENRE_COLORS: Record<string, string> = {
-  'RPG / Narrativo':  '#7c3aed',
-  'Ação / Shooter':   '#dc2626',
-  'Tooling / Shaders':'#059669',
+  'Commercial':  '#7c3aed',
+  'Game Jams':   '#dc2626',
+  'Personal':'#059669',
   'Links':            '#f59e0b',
 };
 

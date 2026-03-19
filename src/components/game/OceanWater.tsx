@@ -49,13 +49,11 @@ export default function OceanWater() {
         roughness={0.1}          // Água é reflexiva, mas as micro-ondas espalham a luz
         metalness={0.1}
         
-        // --- O SEGREDO DO SEA OF THIEVES ---
         transmission={0.9}        // Faz a água parecer de vidro (substitui a necessidade de opacity)
         transparent={true}        // Necessário para a transmissão funcionar
         opacity={1}               // DEVE ser 1 quando usar transmission
         thickness={-1}           // Simula o "volume" da água. Quanto maior, mais a cor base domina
         
-        // Opcional: Atenuação da luz simulando a profundidade
         attenuationColor="#93f1e2" 
         attenuationDistance={3.0} 
         

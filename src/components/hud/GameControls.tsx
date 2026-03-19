@@ -80,14 +80,14 @@ export default function GameControls({ linksPanelOpen, onToggleLinks }: GameCont
               </kbd>
             ))}
           </div>
-          <span className="text-[10px]" style={{ color: '#4B6A8A' }}>Navegar</span>
+          <span className="text-[10px]" style={{ color: '#4B6A8A' }}>Navigate</span>
         </div>
         <div className="flex items-center gap-2">
           <kbd className="px-2 h-5 flex items-center justify-center rounded text-[9px] font-mono"
             style={{ background: 'rgba(59,130,246,0.12)', border: '1px solid rgba(59,130,246,0.25)', color: '#93C5FD' }}>
             SPACE
           </kbd>
-          <span className="text-[10px]" style={{ color: '#4B6A8A' }}>Ancorar</span>
+          <span className="text-[10px]" style={{ color: '#4B6A8A' }}>Anchor</span>
         </div>
         <div className="flex items-center gap-2">
           <kbd className="px-2 h-5 flex items-center justify-center rounded text-[9px] font-mono"
@@ -108,9 +108,9 @@ export default function GameControls({ linksPanelOpen, onToggleLinks }: GameCont
         }}
       >
         {[
-          { color: '#7c3aed', label: 'RPG' },
-          { color: '#dc2626', label: 'Ação' },
-          { color: '#059669', label: 'Tooling' },
+          { color: '#7c3aed', label: 'Commercials' },
+          { color: '#dc2626', label: 'Game Jams' },
+          { color: '#059669', label: 'Personal' },
           { color: '#f59e0b', label: 'Links' },
         ].map(g => (
           <div key={g.label} className="flex items-center gap-1.5">

@@ -8,9 +8,9 @@ interface ProjectCardProps {
 }
 
 const GENRE_COLORS: Record<string, string> = {
-  'RPG / Narrativo':  '#7c3aed',
-  'Ação / Shooter':   '#dc2626',
-  'Tooling / Shaders':'#059669',
+  'Commercial':  '#7c3aed',
+  'Game Jams':   '#dc2626',
+  'Personal':'#059669',
   'Links':            '#f59e0b',
 };
 
@@ -116,7 +116,7 @@ export default function ProjectCard({ project, onInteract }: ProjectCardProps) {
               }}
             >
               {isLink ? <Anchor size={14} /> : <Gamepad2 size={14} />}
-              {isLink ? `Visitar ${project.title}` : 'Jogar no itch.io'}
+              {isLink ? `Visitar ${project.title}` : 'Check it out!'}
               <ExternalLink size={12} />
             </button>
           </div>

@@ -4,6 +4,7 @@ import { Github, Linkedin, Mail, ArrowDown } from "lucide-react";
 import { SiArtstation, SiItchdotio } from 'react-icons/si';
 import { FaWhatsapp, FaFilePdf } from 'react-icons/fa';
 import { ContactGames } from "@/components/ContactGames";
+import { Link, useNavigate } from "react-router-dom";
 
 const skills = {
     gameDev: [
@@ -30,6 +31,8 @@ const skills = {
 };
 
 const GameDevPage: React.FC = () => {
+    const navigate = useNavigate();
+
     return (
         <div className="bg-[#0f0f14] text-white min-h-screen font-sans">
             {/* HERO SECTION */}
@@ -100,7 +103,18 @@ const GameDevPage: React.FC = () => {
                             Contact
                         </span>
                     </a>
+
                 </div>
+                <div className="flex flex-wrap justify-center z-10 mt-8">
+                    <Link
+                        to="/play"
+                        className="px-6 py-3 rounded-xl text-black animate-color-pulse bg-[linear-gradient(270deg,#f97316,#ec4899,#a855f7)] bg-[length:200%_200%]"
+                    >
+                        PLAY THIS PORTFOLIO!
+                    </Link>
+                </div>
+
+
 
             </section>
 

@@ -9,10 +9,12 @@ export default function CompassHUD() {
       }}
     >
       {[
-        { dir: 'N', label: 'RPG / Narrativo', active: false },
-        { dir: 'C', label: 'Hub', active: true },
-        { dir: 'S', label: 'Tooling', active: false },
-        { dir: 'E', label: 'Ação', active: false },
+        { dir: 'SW', label: 'Personal', active: false },
+        { dir: 'N', label: 'Commercials', active: false },
+        { dir: 'NE', label: 'Links', active: false },
+        { dir: 'E', label: 'Game Jams', active: false },
+
+
       ].map(({ dir, label, active }) => (
         <div key={dir} className="flex items-center gap-1.5">
           <span

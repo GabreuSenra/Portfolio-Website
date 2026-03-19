@@ -9,22 +9,22 @@ interface LinksPanelProps {
 const links = [
   {
     label: 'itch.io',
-    description: 'Jogos publicados',
-    url: 'https://itch.io',
+    description: 'My Games',
+    url: 'https://gabreu-senra.itch.io/',
     icon: Gamepad,
     color: '#FA5C5C',
   },
   {
     label: 'ArtStation',
-    description: 'Arte & conceito',
-    url: 'https://artstation.com',
+    description: 'Real-Time VFX',
+    url: 'https://www.artstation.com/gabreusenra',
     icon: Palette,
     color: '#13AFF0',
   },
   {
-    label: 'Currículo',
+    label: 'Resume',
     description: 'Download PDF',
-    url: '#',
+    url: '/Gabriel Senra Resume.pdf',
     icon: FileText,
     color: '#34D399',
   },
@@ -68,7 +68,7 @@ export default function LinksPanel({ isOpen, onClose }: LinksPanelProps) {
                   Links
                 </h3>
                 <p className="font-mono text-[10px] uppercase tracking-widest mt-0.5" style={{ color: '#4B6A8A' }}>
-                  Perfis & recursos
+                  Profiles and Resources
                 </p>
               </div>
               <button
@@ -85,7 +85,7 @@ export default function LinksPanel({ isOpen, onClose }: LinksPanelProps) {
             {/* Info */}
             <div className="px-6 pt-5 pb-3">
               <p className="text-xs leading-relaxed" style={{ color: '#4B6A8A' }}>
-                Desenvolvedor de jogos independente. Especializado em Unity/C# e shaders para URP.
+               Game Developer, Programmer and Game Designer. Especialist in Unity and VFX Artist.
               </p>
             </div>
 
@@ -139,7 +139,7 @@ export default function LinksPanel({ isOpen, onClose }: LinksPanelProps) {
               style={{ borderTop: '1px solid rgba(59,130,246,0.08)' }}
             >
               <p className="font-mono text-[10px] text-center" style={{ color: '#2D4A66' }}>
-                Pressione <span style={{ color: '#3B82F6' }}>Tab</span> para fechar
+                Press <span style={{ color: '#3B82F6' }}>Tab</span> to close
               </p>
             </div>
           </motion.div>

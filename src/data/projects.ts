@@ -5,9 +5,9 @@
 // ─────────────────────────────────────────────────────────────────
 
 export type Genre =
-  | 'RPG / Narrativo'
-  | 'Ação / Shooter'
-  | 'Tooling / Shaders'
+  | 'Commercial'
+  | 'Game Jams'
+  | 'Personal'
   | 'Links';
 
 export type IslandType = 'project' | 'link';
@@ -31,17 +31,17 @@ export const GENRE_CLUSTERS: Record<
   Genre,
   { label: string; color: string; center: [number, number] }
 > = {
-  'RPG / Narrativo': {
-    label: 'RPG / Narrativo',
+  'Commercial': {
+    label: 'Commercial',
     color: '#7c3aed',
-    center: [-25, -20],
+    center: [-26.5, -15],
   },
-  'Ação / Shooter': {
+  'Game Jams': {
     label: 'Ação / Shooter',
     color: '#dc2626',
     center: [25, -20],
   },
-  'Tooling / Shaders': {
+  'Personal': {
     label: 'Tooling / Shaders',
     color: '#059669',
     center: [0, 28],
@@ -49,130 +49,157 @@ export const GENRE_CLUSTERS: Record<
   Links: {
     label: 'Links',
     color: '#f59e0b',
-    center: [0, -32],
+    center: [0, -30],
   },
 };
 
-// ─────────────────────────────────────────────────────────────────
-//  ADD YOUR ISLANDS BELOW — copy any block and fill the fields
-// ─────────────────────────────────────────────────────────────────
+
 export const ISLANDS: Island[] = [
-  // ── RPG / Narrativo ───────────────────────────────────────────
+  // ── Commercial ───────────────────────────────────────────
   {
-    id: 'echoes-of-aether',
+    id: 'littlequarium',
     type: 'project',
-    title: 'Echoes of Aether',
+    title: 'Cozy Littlequarium',
     description:
-      'RPG de ação em perspectiva isométrica com sistema de diálogo ramificado e crafting de feitiços.',
-    genre: 'RPG / Narrativo',
-    year: '2024',
-    tech: ['Unity', 'C#', 'FMOD'],
-    url: 'https://itch.io',
+      'Cozy Littlequarium is a relaxing aquarium simulator that sits at the bottom of your screen! Take care, breed them, collect and decorate! ',
+    genre: 'Commercial',
+    year: '2025',
+    tech: ['Unity', 'C#', 'Aseprite'],
+    url: 'https://store.steampowered.com/app/3420070/Cozy_Littlequarium/',
     image:
-      'https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=400&h=225&fit=crop',
+      'https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3420070/677851c22b33fab57d75ac07260f6f5c18966289/header.jpg?t=1771266259',
     position: [-28, 0, -22],
   },
   {
-    id: 'silent-cartographer',
+    id: 'slime-slammer',
     type: 'project',
-    title: 'Silent Cartographer',
+    title: 'Slime Slammer',
     description:
-      'Jogo narrativo de exploração. O mapa se revela conforme a história avança. 8h de conteúdo.',
-    genre: 'RPG / Narrativo',
-    year: '2023',
-    tech: ['Unity', 'C#', 'Ink'],
-    url: 'https://itch.io',
+      'Slime Slammer is an idle PvZ-like tower defense game that sits at the bottom of your screen! ',
+    genre: 'Commercial',
+    year: '2026',
+    tech: ['Unity', 'C#', 'Krita'],
+    url: 'https://store.steampowered.com/app/4435840/Slime_Slammer/',
     image:
-      'https://images.unsplash.com/photo-1614854262318-831574f15f1f?w=400&h=225&fit=crop',
-    position: [-22, 0, -15],
+      'https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4435840/6d097c62b178f96b5888ce967fbb84a1f94a4027/capsule_616x353.jpg?t=1773678162',
+    position: [-33, 0, -15],
   },
-  {
-    id: 'verdant-oath',
-    type: 'project',
-    title: 'Verdant Oath',
-    description:
-      'Deck-building RPG inspirado em Slay the Spire com mundo aberto procedimental.',
-    genre: 'RPG / Narrativo',
-    year: '2023',
-    tech: ['Godot 4', 'GDScript'],
-    url: 'https://itch.io',
-    image:
-      'https://images.unsplash.com/photo-1542751371-adc38448a05e?w=400&h=225&fit=crop',
-    position: [-32, 0, -14],
-  },
+
 
   // ── Ação / Shooter ────────────────────────────────────────────
   {
-    id: 'neon-breach',
+    id: 'turnon',
     type: 'project',
-    title: 'Neon Breach',
+    title: 'Turn On The Light',
     description:
-      'Roguelite top-down shooter com mecânicas de ricochete e modificadores de bala em tempo real.',
-    genre: 'Ação / Shooter',
-    year: '2024',
-    tech: ['Unity', 'C#', 'DOTween'],
-    url: 'https://itch.io',
+      'Game that portrays the cycle of depression, in an abstract way. A game about solving puzzles and unlock colors in a metroidvania style.',
+    genre: 'Game Jams',
+    year: '2023',
+    tech: ['Unity', 'C#', 'Photoshop'],
+    url: 'https://gabreu-senra.itch.io/turn-on-the-light',
     image:
-      'https://images.unsplash.com/photo-1614294149010-950b698f72c0?w=400&h=225&fit=crop',
-    position: [28, 0, -22],
+      'https://img.itch.zone/aW1nLzEzMDQ1MTAwLnBuZw==/original/%2Fl7D6u.png',
+    position: [28, 0, -26],
   },
   {
-    id: 'overcharge',
+    id: 'whiletrue',
     type: 'project',
-    title: 'Overcharge',
+    title: 'While True',
     description:
-      'Bullet hell 2D com sistema de sobrecarga elétrica. Participação no Global Game Jam 2024.',
-    genre: 'Ação / Shooter',
-    year: '2024',
-    tech: ['Unity', 'C#', 'Shader Graph'],
-    url: 'https://itch.io',
-    image:
-      'https://images.unsplash.com/photo-1605648916361-9bc12ad6a569?w=400&h=225&fit=crop',
-    position: [22, 0, -15],
-  },
-  {
-    id: 'void-runner',
-    type: 'project',
-    title: 'Void Runner',
-    description:
-      'Runner infinito com mecânicas de manipulação de gravidade e wall-running procedural.',
-    genre: 'Ação / Shooter',
+      'Winner of the 2nd DevJams Best Art Award for "Crie Seus Jogos" While(true) is a infinite runner developed for the game jam "DevJam" with "Infinite Loop" theme.',
+    genre: 'Game Jams',
     year: '2022',
-    tech: ['Unity', 'C#'],
-    url: 'https://itch.io',
+    tech: ['Unity', 'C#', 'Aseprite'],
+    url: 'https://gabreu-senra.itch.io/whiletrue',
     image:
-      'https://images.unsplash.com/photo-1561736778-92e52a7769ef?w=400&h=225&fit=crop',
-    position: [32, 0, -13],
+      'https://img.itch.zone/aW1hZ2UvMjE4Mjc1OS8xMjg4OTAyMy5wbmc=/347x500/lDKfIr.png',
+    position: [18, 0, -16],
+  },
+  {
+    id: 'whyd',
+    type: 'project',
+    title: "Why the chicken DIDN'T cross the road",
+    description:
+      "A game where you are a crazy chicken in it's way to cross a road.",
+    genre: 'Game Jams',
+    year: '2022',
+    tech: ['Unity', 'C#', 'Photoshop'],
+    url: 'https://gabreu-senra.itch.io/why-the-chicken-didnt-cross-the-road',
+    image:
+      'https://img.itch.zone/aW1hZ2UvNDM2NDU5OC8yNjA1Mjk0NC5wbmc=/347x500/UDaI86.png',
+    position: [28, 0, -16],
+  },
+  {
+    id: 'sushi',
+    type: 'project',
+    title: "Pazzuru Packing Sushi",
+    description:
+      "You run a Japanese Food Delivey, but the boxes won't fill up on their own!, YOU have to fill them with all pieces the customer ordered, in a limited space of a Bento Box!",
+    genre: 'Game Jams',
+    year: '2024',
+    tech: ['Unity', 'C#', 'Aseprite'],
+    url: 'https://gabreu-senra.itch.io/pazuru-packing-sushi',
+    image:
+      'https://img.itch.zone/aW1hZ2UvMjI5NDI2MC8xMzU5NTUyNS5wbmc=/347x500/%2Fs950L.png',
+    position: [20, 0, -24],
   },
 
-  // ── Tooling / Shaders ─────────────────────────────────────────
+  // ── Personal ─────────────────────────────────────────
   {
-    id: 'prism-shader-pack',
+    id: 'ashen',
     type: 'project',
-    title: 'Prism Shader Pack',
+    title: 'Ashen Survivors',
     description:
-      'Coleção de 20+ shaders URP para Unity: dissolve, hologramas, fresnel e distorção de calor.',
-    genre: 'Tooling / Shaders',
-    year: '2024',
-    tech: ['HLSL', 'Shader Graph', 'Unity URP'],
-    url: 'https://itch.io',
+      'In Ashen Survivors, you battle through relentless waves of corrupted warriors, twisted beasts, and nightmarish creatures inspired by the dark worlds of ancient fantasy.',
+    genre: 'Personal',
+    year: '2019',
+    tech: ['Unity', 'C#', 'Aseprite'],
+    url: 'https://gabreu-senra.itch.io/ashen-survivors',
     image:
-      'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=225&fit=crop',
+      'https://img.itch.zone/aW1nLzI2MDUzNTkxLnBuZw==/original/v329Ow.png',
     position: [-8, 0, 28],
   },
   {
-    id: 'level-forge',
+    id: 'wonder',
     type: 'project',
-    title: 'Level Forge',
+    title: 'Super Mario Bros - Wonder Style',
     description:
-      'Editor procedural de dungeons integrado ao Unity Editor. Exporta para ScriptableObject.',
-    genre: 'Tooling / Shaders',
-    year: '2023',
-    tech: ['Unity Editor', 'C#', 'Burst'],
-    url: 'https://itch.io',
+      'Fan-made remake of the very first level of Super Mario Bros, recreated with the vibrant visual style of Super Mario Bros. Wonder',
+    genre: 'Personal',
+    year: '2025',
+    tech: ['Unity Editor', 'C#', 'Photoshop'],
+    url: 'https://gabreu-senra.itch.io/super-mario-bros-wonder-style',
     image:
-      'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=400&h=225&fit=crop',
+      'https://img.itch.zone/aW1nLzI1NzE3NzQ5LnBuZw==/original/NQ9Q%2F2.png',
     position: [8, 0, 28],
+  },
+  {
+    id: 'connect',
+    type: 'project',
+    title: 'CONNECT',
+    description:
+      'A game created to teach pointers! It is my Undergraduate thesis project!',
+    genre: 'Personal',
+    year: '2025',
+    tech: ['Unity Editor', 'C#', 'Aseprite'],
+    url: 'https://gabreu-senra.itch.io/connect',
+    image:
+      'https://img.itch.zone/aW1nLzI0NDM2Nzg1LnBuZw==/315x250%23c/yMJfh1.png',
+    position: [4, 0, 35],
+  },
+  {
+    id: 'celeste',
+    type: 'project',
+    title: 'Celeste Educational Recreation',
+    description:
+      'Recreation of the Celeste game system, including movement, respawn, and level transitions.',
+    genre: 'Personal',
+    year: '2023',
+    tech: ['Unity Editor', 'C#', 'Aseprite'],
+    url: 'https://gabreu-senra.itch.io/celeste-educational-recreation',
+    image:
+      'https://img.itch.zone/aW1nLzE3MzE5MjU4LnBuZw==/315x250%23c/7SpPvv.png',
+    position: [-4, 0, 35],
   },
 
   // ── Links ─────────────────────────────────────────────────────
@@ -180,34 +207,34 @@ export const ISLANDS: Island[] = [
     id: 'link-itchio',
     type: 'link',
     title: 'itch.io',
-    description: 'Todos os meus jogos publicados na plataforma itch.io.',
+    description: 'All my games on itch.io.',
     genre: 'Links',
-    url: 'https://itch.io',
+    url: 'https://gabreu-senra.itch.io/',
     image:
-      'https://images.unsplash.com/photo-1511512578047-dfb367046420?w=400&h=225&fit=crop',
-    position: [-8, 0, -34],
+      'https://assetsio.gnwcdn.com/Itch.io_logo.jpg?width=1200&height=600&fit=crop&enable=upscale&auto=webp',
+    position: [-8, 0, -30],
   },
   {
     id: 'link-artstation',
     type: 'link',
     title: 'ArtStation',
-    description: 'Portfolio de arte, concept art e shaders no ArtStation.',
+    description: 'Real-Time VFX',
     genre: 'Links',
-    url: 'https://artstation.com',
+    url: 'https://www.artstation.com/gabreusenra',
     image:
       'https://images.unsplash.com/photo-1618172193763-c511deb635ca?w=400&h=225&fit=crop',
-    position: [0, 0, -38],
+    position: [0, 0, -34],
   },
   {
     id: 'link-curriculo',
     type: 'link',
-    title: 'Currículo',
-    description: 'Meu currículo completo em PDF — experiência e formação.',
+    title: 'Resume',
+    description: 'My Resume in PDF',
     genre: 'Links',
-    url: '#',
+    url: '/Gabriel Senra Resume.pdf',
     image:
-      'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=225&fit=crop',
-    position: [8, 0, -34],
+      '/assets/images/profile.png',
+    position: [8, 0, -30],
   },
 ];
 

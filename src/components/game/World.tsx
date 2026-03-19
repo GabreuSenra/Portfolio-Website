@@ -205,6 +205,7 @@ export default function World() {
 
       {/* Distant birds */}
       <DistantBird x={-30} z={-30} phase={0} />
+      <DistantBird x={-18} z={-18} phase={1} />
       <DistantBird x={30}  z={20}  phase={2.1} />
 
       {/* Central hub platform */}
