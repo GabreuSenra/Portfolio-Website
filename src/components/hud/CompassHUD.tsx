@@ -9,10 +9,10 @@ export default function CompassHUD() {
       }}
     >
       {[
-        { dir: 'SW', label: 'Personal', active: false },
-        { dir: 'N', label: 'Commercials', active: false },
-        { dir: 'NE', label: 'Links', active: false },
-        { dir: 'E', label: 'Game Jams', active: false },
+        { dir: 'SW', label: 'Personal', active: true },
+        { dir: 'N', label: 'Commercials', active: true },
+        { dir: 'NE', label: 'Links', active: true },
+        { dir: 'E', label: 'Game Jams', active: true },
 
 
       ].map(({ dir, label, active }) => (

@@ -10,15 +10,14 @@ export default function GameControls({ linksPanelOpen, onToggleLinks }: GameCont
     <>
       {/* Top-left: Title */}
       <div className="absolute top-5 left-5 z-30">
-        <p className="font-mono text-[10px] uppercase tracking-widest mb-1" style={{ color: '#2D4A66' }}>
+        <p className="font-mono text-[10px] uppercase tracking-widest mb-1" style={{ color: '#e5f2ff' }}>
           Archipelago
         </p>
         <h1 className="text-xl font-semibold tracking-tight" style={{ color: '#E2EAF4' }}>
-          Gamedev Portfolio
+          Gabriel Senra - Gamedev Portfolio
         </h1>
         <div className="flex gap-1.5 mt-2">
-          <span className="badge-tech">Unity</span>
-          <span className="badge-tech">C# / HLSL</span>
+          <span className="badge-tech">This portfolio was made with three.js</span>
         </div>
       </div>
 
