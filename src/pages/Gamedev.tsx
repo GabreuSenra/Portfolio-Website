@@ -93,7 +93,7 @@ const GameDevPage: React.FC = () => {
                         </span>
                     </a>
                     <a
-                        href="/Gabriel Senra Resume.pdf"
+                        href="http://monografias.ice.ufjf.br/tcc-web/tcc?id=1064"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="flex flex-row items-center gap-2 p-3 rounded-full bg-card/50 border border-border/50 hover:border-primary/50 hover:bg-primary/10 transition-all duration-300 hover:scale-110 group"
