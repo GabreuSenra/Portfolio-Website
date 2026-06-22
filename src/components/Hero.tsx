@@ -26,7 +26,7 @@ export const Hero = () => {
 
           <div className="w-32 h-32 mx-auto mb-8 bg-gradient-primary rounded-full p-1 animate-glow-pulse">
             <img
-              src={"https://media.licdn.com/dms/image/v2/D4D03AQHHtFVm4LGqPQ/profile-displayphoto-scale_400_400/B4DZ5iVkEDJUAg-/0/1779766284534?e=1781136000&v=beta&t=gITwU1ZOJyAOkNnAF5UoFoR_rakslFbUYYtwTiMpYzk"}
+              src={"https://avatars.githubusercontent.com/u/48576715?v=4"}
               alt="Gabriel Senra"
               className="w-full h-full rounded-full object-cover"
             />
