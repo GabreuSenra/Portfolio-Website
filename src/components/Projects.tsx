@@ -118,8 +118,8 @@ export const Projects = () => {
     },
     {
       id: 10,
-      title: "Slime Slammer",
-      description: "Slime Slammer é um jogo 'Idle Tower Defence' no estilo Plants vs. Zombies que fica na parte inferior da sua tela!.",
+      title: "Slimes TD",
+      description: "Slimes TD é um jogo de Tower Defense no estilo PvZ com multiplos modos de jogo! Inclusive um idle que fica na parte inferior da sua tela!",
       category: "jogos",
       technologies: ["C#", "Unity", "Photoshop"],
       image: "/assets/images/projects/slimeslammer.png",

@@ -73,13 +73,13 @@ export const ISLANDS: Island[] = [
   {
     id: 'slime-slammer',
     type: 'project',
-    title: 'Slime Slammer',
+    title: 'Slimes TD',
     description:
-      'Slime Slammer is an idle PvZ-like tower defense game that sits at the bottom of your screen! ',
+      'Slimes TD is a PvZ-inspired Tower Defense game with multiple game modes! It even features an idle mode that stays at the bottom of your screen!  ',
     genre: 'Commercial',
     year: '2026',
     tech: ['Unity', 'C#', 'Krita'],
-    url: 'https://store.steampowered.com/app/4435840/Slime_Slammer/',
+    url: 'https://store.steampowered.com/app/4435840/Slimes_TD/',
     image:
       'https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4435840/6d097c62b178f96b5888ce967fbb84a1f94a4027/capsule_616x353.jpg?t=1773678162',
     position: [-33, 0, -15],
