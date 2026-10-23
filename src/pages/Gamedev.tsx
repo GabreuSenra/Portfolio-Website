@@ -26,7 +26,7 @@ const skills = {
         "Adobe Photoshop",
         "Toon Boom Harmony",
         "Aseprite",
-        "VFX (Postgraduate - in progress)",
+        "VFX (Postgraduate)",
     ],
 };
 
@@ -46,7 +46,7 @@ const GameDevPage: React.FC = () => {
                 </div>
                 <div className="absolute inset-0 bg-gradient-to-br from-indigo-900/20 via-purple-900/10 to-transparent blur-3xl opacity-40" />
                 <h1 className="text-5xl md:text-6xl font-bold mb-6 z-10">
-                    Game Developer & Technical Game Designer
+                    Game Developer, Tech Art and Game Designer
                 </h1>
                 <p className="text-xl text-gray-300 max-w-2xl mb-8 z-10">
                     Building interactive systems and immersive gameplay experiences for
@@ -195,6 +195,19 @@ const GameDevPage: React.FC = () => {
                         <li>• Publishing and testing commercial and prototype games</li>
                     </ul>
                 </div>
+                <div className="bg-[#1b1b25] p-8 rounded-2xl shadow-lg">
+                    <h3 className="text-2xl font-semibold">
+                        Webcore Games
+                    </h3>
+                    <p className="text-gray-400 mb-4">
+                        Unity Developer & Tech Art (2026–now) – Remote, Brazil
+                    </p>
+                    <ul className="space-y-2 text-gray-300">
+                        <li>• VFX art and tech art pipeline, creating atmospheric effects, animated backgrounds, particles, shaders, and material setups in Unity Shader Graphs and HLSL.</li>
+                        <li>• Programmed and integrated Unity systems for gameplay, UI, visual feedback, animations, scene transitions, and dynamic effects across multiple game features.</li>
+                        <li>• Built and dressed complete atmospheric 3D scenes.</li>
+                    </ul>
+                </div>
             </section>
 
             {/* TEACHING */}
@@ -222,7 +235,7 @@ const GameDevPage: React.FC = () => {
                         • Bachelor's Degree in Computer Science – Federal University of
                         Juiz de Fora (Brazil)
                     </li>
-                    <li>• Postgraduate Specialization in VFX (in progress)</li>
+                    <li>• Postgraduate Specialization in VFX</li>
                 </ul>
             </section>
 

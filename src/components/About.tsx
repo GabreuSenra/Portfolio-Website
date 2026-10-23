@@ -119,7 +119,7 @@ export const About = () => {
               Universidade Federal de Juiz de Fora
             </p>
             <p className="text-lg text-muted-foreground">
-              <strong className="text-foreground">Specialization in VFX (in progress)</strong>
+              <strong className="text-foreground">Specialization in VFX</strong>
             </p>
             <p className="text-muted-foreground mt-2 mb-5">
               VFX Apprentice
